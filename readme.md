@@ -8,6 +8,8 @@ This JSON file can also be read by your Javascript. This will make it easier to 
 
 Supports all JSON objects, including nested objects, arrays and keys which are not legal key names (variable names that begin with a number will be prefixed; variable names containing illegal characters will have those characters escaped.)
 
+Ignores (passes through) files with a extensions other than `.json`.
+
 ## Installation
 
 ```sh
