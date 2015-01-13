@@ -28,7 +28,7 @@ var jsonSass = require('gulp-json-sass'),
 
 gulp.task('sass', function() {
   return gulp
-    .src('example.json', 'example.sass')
+    .src(['example.json', 'example.sass'])
     .pipe(jsonSass({
       sass: true
     }))
