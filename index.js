@@ -23,6 +23,10 @@ module.exports = function(opt) {
   opt.firstCharacter = opt.firstCharacter || '_';
   opt.prefixFirstNumericCharacter = opt.prefixFirstNumericCharacter === undefined ? true : opt.prefixFirstNumericCharacter;
 
+  return through(processJSON);
+
+  /////////////
+
   function processJSON(file) {
 
     // if it does not have a .json suffix, ignore the file
@@ -83,5 +87,4 @@ module.exports = function(opt) {
     }
   }
 
-  return through(processJSON);
 }
