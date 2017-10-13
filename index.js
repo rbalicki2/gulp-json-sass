@@ -56,7 +56,7 @@ module.exports = function(opt) {
     });
 
     var sass = sassVariables.join('\n');
-    file.contents = Buffer(sass);
+    file.contents = Buffer.from(sass);
 
     file.path = gutil.replaceExtension(file.path, opt.sass ? '.sass' : '.scss');
 
